@@ -21,10 +21,10 @@ services:
       - key: NEXTAUTH_URL
         value: https://calcom-web.onrender.com
 
+  - type: redis
+    name: calcom-redis
+
 databases:
   - name: calcom-db
     databaseName: calcom
     user: calcom_user
-
-redis:
-  - name: calcom-redis
